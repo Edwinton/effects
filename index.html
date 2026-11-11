@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Tilt, Glow & Magnetic Demo</title>
+  <link rel="stylesheet" href="glow.css">
+  <style>
+    body { background: #f5f5f5; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; font-family: sans-serif; }
+    .tilt-card { width: 320px; padding: 40px; background: #fff; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transform-style: preserve-3d; transition: transform 0.1s ease-out; }
+    .tilt-inner { transform-style: preserve-3d; transition: transform 0.1s ease-out; margin-bottom: 24px; }
+    h2 { margin: 0 0 8px; color: #1a1a1a; }
+    p { color: #555; line-height: 1.5; margin: 0; }
+    .magnetic-btn { background: #ff7b00; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: bold; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="tilt-card">
+    <div class="tilt-inner">
+      <h2>Product Studio</h2>
+      <p>A 3D interactive card with parallax depth and a mouse-tracking spotlight glow.</p>
+    </div>
+    <button class="magnetic-btn">Hover Me</button>
+  </div>
+  <script src="tilt.js"></script>
+  <script src="magnetic.js"></script>
+</body>
+</html>
